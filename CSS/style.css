@@ -28,22 +28,37 @@ header {
     
     
 }
-
+/*Hero Section*/
 #hero img {
     width: 400px;
 }
-
+/*Bio Section*/
 #bio {
     text-align: center;
     
     
 }
-
+/*Hobbies Section*/
 #hobbies ul li:nth-child(even){
     background: white;
-    color:black;
+    color: black;
 
 }
+
+ul li:nth-child(odd){
+    color: blue;
+}
+/*Gallery Section*/
+#gallery {
+    text-align: right;
+}
+#gallery img{
+    max-width: 100%;
+}
+#gallery img{
+    text-align: right;
+}
+
 
 
 
