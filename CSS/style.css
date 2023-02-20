@@ -1,0 +1,38 @@
+body {
+    font-family:Roboto;
+    background-color: #FFE4C2;
+    color:#002835;
+    font-weight: bolder;
+    
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family:"Special Elite";
+   font-size:50pt;
+   
+}
+
+header {
+    text-align:center;
+}
+
+#hero, footer {
+    background-color:#FEC87F;
+    text-align:center;
+    padding: 10px;
+    border:4px solid #5C4E47;
+    
+    
+}
+
+#hero img {
+    width: 400px;
+}
+
+#bio {
+    text-align: center;
+    
+    
+}
+
