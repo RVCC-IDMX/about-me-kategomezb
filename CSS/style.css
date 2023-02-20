@@ -47,6 +47,7 @@ header {
 
 ul li:nth-child(odd){
     color: blue;
+    
 }
 /*Gallery Section*/
 #gallery {
@@ -57,6 +58,27 @@ ul li:nth-child(odd){
 }
 #gallery img{
     text-align: right;
+}
+/*Literature*/
+#lit{
+    
+}
+#lit div{
+    
+    max-width: 40rem;
+}
+#lit div p:nth-child(3n+1):first-letter{
+    color:black;
+    float: left;
+    font-size:1.4em;
+    background-image: radial-gradient(white,rgb(240, 213, 155));
+    margin-right:0.4em;
+    line-height: .65;
+    border:4px outset burlywood;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 5px 5px 5px black;
+    border-top-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 }
 
 
