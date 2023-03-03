@@ -16,8 +16,9 @@ h1{
     font-size:50pt;
 }
 h2 {
-    
+    font-size:20pt;
 }
+
 
 header {
     text-align:center;
@@ -61,13 +62,15 @@ ul li:nth-child(odd){
 }
 /*Gallery Section*/
 #gallery {
-    text-align: right;
+    text-align: center;
 }
 #gallery img{
     max-width: 100%;
 }
 #gallery img{
-    text-align: right;
+    text-align: center;
+
+
 }
 /*Literature*/
 #lit{
@@ -77,7 +80,7 @@ ul li:nth-child(odd){
     
     max-width: 40rem;
 }
-#lit div p:nth-child(3n+1):first-letter{
+#lit div p:nth-child(2n+1):first-letter{
     color:black;
     float: left;
     font-size:1.4em;
@@ -90,6 +93,7 @@ ul li:nth-child(odd){
     border-top-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
+/* tablet size */
 @media screen and (min-width: 60em){
     figure{
         display: grid;
@@ -99,8 +103,37 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 1rem;
+}
+figure img {
+    width: 100%;
+}
+
+#lit div {
+    max-width: 100%;
+    columns: 30rem;
+}
+}
+/* large screen size */
+
+@media screen and (min-width: 60em) {
+
+#gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+hr {
+    display: none;
+}
+
+#gallery h2 {
+    grid-column: 1/-1;
+}
+
+figure {
+    display: block;
 }
 }
 
