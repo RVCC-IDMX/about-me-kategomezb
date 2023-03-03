@@ -103,7 +103,7 @@ figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 1rem;
 }
 figure img {
@@ -126,6 +126,7 @@ figure img {
     
 hr {
     display: none;
+    
 }
 
 #gallery h2 {
