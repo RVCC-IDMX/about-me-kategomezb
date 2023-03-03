@@ -15,6 +15,9 @@ h1, h2, h3, h4, h5, h6 {
 h1{
     font-size:50pt;
 }
+h2 {
+    
+}
 
 header {
     text-align:center;
@@ -30,7 +33,8 @@ header {
 }
 /*Hero Section*/
 #hero img {
-    width: 400px;
+    width: 300px;
+
 }
 /*Bio Section*/
 #bio {
@@ -39,9 +43,15 @@ header {
     
 }
 /*Hobbies Section*/
+element.style {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
 #hobbies ul li:nth-child(even){
     background: white;
     color: black;
+    
 
 }
 
@@ -80,7 +90,19 @@ ul li:nth-child(odd){
     border-top-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
-
+@media screen and (min-width: 60em){
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+}
 
 
 
