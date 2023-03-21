@@ -18,6 +18,11 @@ h1{
 h2 {
     font-size:20pt;
 }
+h3{
+    font-size:20pt;
+    text-align:center;
+    
+}
 
 
 header {
@@ -80,7 +85,7 @@ ul li:nth-child(odd){
     
     max-width: 40rem;
 }
-#lit div p:nth-child(2n+1):first-letter{
+#lit div p:first-child:first-letter{
     color:black;
     float: left;
     font-size:1.4em;
@@ -136,6 +141,23 @@ hr {
 figure {
     display: block;
 }
+}
+/*video*/
+#video {
+    
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    
+}
+#video iframe {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
 }
 
 
