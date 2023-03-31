@@ -20,8 +20,13 @@ h2 {
 }
 h3{
     font-size:20pt;
-    text-align:center;
+    text-align:center; 
+}
+h4{
+    font-size:25pt;
+    text-align:center; 
     
+
 }
 
 
@@ -137,5 +142,54 @@ hr {
 
 figure {
     display: block;}}
+/* Contact Form*/
+
+#formElements {
+    display: grid;
+    row-gap: .5em;
+    color: black;
+  }
+  #contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    
+  }
+  
+  fieldset {
+    border: 2px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+  }
+ 
+  legend {
+    background-color: #FEC87F;
+    color: #002835;
+    padding:.5em;
+  }
+  #contact input, #contact textarea, #contact select, #contact button {
+    padding:.5em;
+    font-size: 1rem;
+    color: black;
+    
+  }
+  #contact ul {
+    list-style: none;
+    padding:0px;
+  }
+  #contact li{
+    margin:1rem;
+  }
+  #contact button{
+    background-color: #FEC87F;
+    color: #002835;
+    border: 1px solid #FEC87F;
+    max-width:400px;
+    width:50%;
+    justify-self: center;
+  }
+
+
 
 
