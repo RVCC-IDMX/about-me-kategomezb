@@ -65,12 +65,19 @@ main {
 
 .navbar-links a {
     color: whitesmoke;
-    background-attachment: black;
+    background-color: rgb(51, 48, 48);
     font-size: 1.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
     text-decoration: none;
     display: inline-block;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 10px;
+    outline: none;
 }
 
 
