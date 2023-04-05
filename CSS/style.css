@@ -100,6 +100,7 @@ ul li:nth-child(odd){
     border-top-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
+
 /* tablet size */
 @media screen and (min-width: 60em){
     figure{
@@ -142,9 +143,8 @@ hr {
 }
 
 figure {
-    display: block;}}
-
-
+    display: block;}
+}
 
 /* Contact Form*/
 
