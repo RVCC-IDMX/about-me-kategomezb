@@ -105,6 +105,7 @@ ul li:nth-child(odd){
     figure{
         display: grid;
         grid-template-columns: 2fr 1fr;
+
     }
 figcaption {
     display: flex;
@@ -142,6 +143,9 @@ hr {
 
 figure {
     display: block;}}
+
+
+
 /* Contact Form*/
 
 #formElements {
