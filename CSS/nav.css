@@ -1,66 +1,67 @@
 /* make scrolling smooth */
 
-html {
+html{ 
     scroll-behavior: smooth;
-}
 
+}
 /* 
  get rid of padding & sizing on body so
  header is at top
 */
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 
-body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    
-}
+    /* add some padding back to rest of page */
+    main{
+        padding: 2vw;
 
-
-/* add some padding back to rest of page */
-
-main {
-    padding: 2vw;
-}
-
+    }
 
 /* navbar */
 
 .navbar {
-    background-color:rgb(51, 48, 48);
+
+    background-color: rgb(51, 48, 48);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    
-    
-    
+
+
 }
+
 
 /* logo */
 
 .logo {
+
     display: flex;
-    align-items: center;  
+    align-items: center;
+
 }
 
 .logo img {
-    height: 6vh;
-    width: 6vh;
 
+    height: 6vw;
+    width: 6vw;
+    
 }
 
 .logo h1 {
-    font-size: 1.6em;
+
+    font-size: 1.2 rem;
 }
 
 /* navigation list */
 
 .navbar-links li {
     list-style: none;
-    display: inline-block;
+    display: block;
     padding: 0.5em 0;
 }
 
@@ -70,39 +71,52 @@ main {
 */
 
 .navbar-links a {
-    color: whitesmoke;
+    color:whitesmoke;
     background-color: rgb(51, 48, 48);
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     padding: 1rem 1.25rem;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block; 
 }
 
-.navbar-links a:hover,
-.navbar-links a:focus {
-    filter: invert(1);
-    border-radius: 10px;
-    outline: none;
-}
+    .navbar-links a:hover,
+    .navbar-links a:focus {
+        color:#B6C4D6;
+        background-color:#315B8F;
+        filter: invert(1);
+        border-radius: 10px;
+        
+    }
 
 /* 
 media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
+@media screen and (min-width: 60rem) {
 
+    .navbar-links {
+        display: flex;
+        justify-content: space-between;
+
+    } 
 
     .navbar {
         flex-direction: row;
         justify-content: space-between;
         
+
+
     }
 
     .navbar ul {
         display: flex;
         justify-content: space-between;
-        
+        font-size: .6px;
+        text-align: center;
+
     }
+}
 
 
