@@ -1,122 +1,89 @@
 /* make scrolling smooth */
-
-html{ 
+html {
     scroll-behavior: smooth;
-
-}
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
-    body {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-
-    /* add some padding back to rest of page */
-    main{
-        padding: 2vw;
-
-    }
-
-/* navbar */
-
-.navbar {
-
+  }
+ 
+  /* get rid of padding & sizing on body so header is at top */
+  body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  /* add some padding back to rest of page */
+  main {
+    padding: 2vw;
+  }
+ 
+  /* navbar */
+  .navbar {
     background-color: rgb(51, 48, 48);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     padding: 1rem;
-
-
-}
-
-
-/* logo */
-
-.logo {
-
+  }
+ 
+  /* logo */
+  .logo {
     display: flex;
     align-items: center;
-
-}
-
-.logo img {
-
+  }
+ 
+  .logo img {
     height: 6vw;
     width: 6vw;
-    
-}
-
-.logo h1 {
-
-    font-size: 1.2 rem;
-}
-
-/* navigation list */
-
-.navbar-links li {
+  }
+ 
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+ 
+  /* navigation list */
+  .navbar-links li {
     list-style: none;
     display: block;
     padding: 0.5em 0;
-}
-
-/*  
- style all a tags in header 
- and then on hover
-*/
-
-.navbar-links a {
-    color:whitesmoke;
+  }
+ 
+  /* style all a tags in header and then on hover */
+  .navbar-links a {
+    color: whitesmoke;
     background-color: rgb(51, 48, 48);
-    font-size: 1.9rem;
+    font-size: 1.1rem;
     padding: 1rem 1.25rem;
     letter-spacing: 5px;
     text-decoration: none;
-    display: inline-block; 
-}
-
-    .navbar-links a:hover,
-    .navbar-links a:focus {
-        color:#B6C4D6;
-        background-color:#315B8F;
-        filter: invert(1);
-        border-radius: 10px;
-        
-    }
-
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
-@media screen and (min-width: 60rem) {
-
+    display: inline-block;
+  }
+ 
+  .navbar-links a:hover,
+  .navbar-links a:focus {
+    color: #B6C4D6;
+    background-color: #315B8F;
+    filter: invert(1);
+    border-radius: 10px;
+  }
+ 
+  /* media query for non-mobile nav bar min-width set to width of nav elements such that no text wraps */
+  @media screen and (min-width: 60rem) {
     .navbar-links {
-        display: flex;
-        justify-content: space-between;
-
-    } 
-
+      display: flex;
+      justify-content: space-between;
+    }
+ 
     .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        
-
-
+      flex-direction: row;
+      justify-content: space-between;
     }
-
+ 
     .navbar ul {
-        display: flex;
-        justify-content: space-between;
-        font-size: .6px;
-        text-align: center;
-
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      /* adjusted to a reasonable value */
+      text-align: center;
     }
-}
-
-
+  }
