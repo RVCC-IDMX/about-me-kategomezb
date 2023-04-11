@@ -1,89 +1,149 @@
 /* make scrolling smooth */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+/* get rid of padding & sizing on body so header is at top */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* add some padding back to rest of page */
+main {
+  padding: 2vw;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgb(51, 48, 48);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 6vw;
+  width: 6vw;
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+}
+
+/* navigation list */
+.navbar-links {
+  display: none;
+}
+
+.navbar-links li {
+  list-style: none;
+  display: block;
+  padding: 0.5em 0;
+}
+
+/* style all a tags in header and then on hover */
+.navbar-links a {
+  color: whitesmoke;
+  background-color: rgb(51, 48, 48);
+  font-size: 1.1rem;
+  padding: 1rem 1.25rem;
+  letter-spacing: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  color: #B6C4D6;
+  background-color: #315B8F;
+  filter: invert(1);
+  border-radius: 10px;
+}
+
+/* hamburger icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* media query for non-mobile nav bar min-width set to width of nav elements such that no text wraps */
+@media screen and (min-width: 60rem) {
+  .navbar-links {
+    display: flex;
+    justify-content: space-between;
   }
- 
-  /* get rid of padding & sizing on body so header is at top */
-  body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
- 
-  /* add some padding back to rest of page */
-  main {
-    padding: 2vw;
-  }
- 
-  /* navbar */
+
   .navbar {
-    background-color: rgb(51, 48, 48);
-    color: whitesmoke;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar ul {
     display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    
+/* adjusted to a reasonable value */
+    text-align: center;
+  }
+
+  /* hide hamburger on larger screens */
+  .hamburger {
+    display: none;
+  }
+}
+
+/* move hamburger to the right */
+.navbar-toggle {
+  order: 1;
+  margin-left: auto;
+  z-index: 990;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
     flex-direction: column;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
- 
-  /* logo */
-  .logo {
-    display: flex;
     align-items: center;
+    width: 100%;
+    margin-top: 1rem;
   }
- 
-  .logo img {
-    height: 6vw;
-    width: 6vw;
+
+  .navbar-links.active {
+    display: flex;
   }
- 
-  .logo h1 {
-    font-size: 1.2rem;
-  }
- 
-  /* navigation list */
+
   .navbar-links li {
-    list-style: none;
-    display: block;
-    padding: 0.5em 0;
+    margin: 0.5rem 0;
   }
- 
-  /* style all a tags in header and then on hover */
-  .navbar-links a {
-    color: whitesmoke;
-    background-color: rgb(51, 48, 48);
-    font-size: 1.1rem;
-    padding: 1rem 1.25rem;
-    letter-spacing: 5px;
-    text-decoration: none;
-    display: inline-block;
-  }
- 
-  .navbar-links a:hover,
-  .navbar-links a:focus {
-    color: #B6C4D6;
-    background-color: #315B8F;
-    filter: invert(1);
-    border-radius: 10px;
-  }
- 
-  /* media query for non-mobile nav bar min-width set to width of nav elements such that no text wraps */
-  @media screen and (min-width: 60rem) {
-    .navbar-links {
-      display: flex;
-      justify-content: space-between;
-    }
- 
-    .navbar {
-      flex-direction: row;
-      justify-content: space-between;
-    }
- 
-    .navbar ul {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1rem;
-      /* adjusted to a reasonable value */
-      text-align: center;
-    }
-  }
+}
+
+
+
+

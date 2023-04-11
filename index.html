@@ -23,16 +23,33 @@
         <div class="logo">
             <img src="img/logo-96X96.svg" alt="Blue origami logo">
             <h1>Web Dev I - Online</h1>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#lit">Blog</a></li>
-                    <li><a href="#contact">Contact Me</a></li> 
-                </ul>
+        </div> 
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#lit">Blog</a></li>
+                <li><a href="#contact">Contact Me</a></li> 
+            </ul>
+        </div>
+        <div class="navbar-toggle">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-        </nav>
-    </header>
+          </div> 
+    </nav>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbarLinks = document.querySelector('.navbar-links');
+      
+        hamburger.addEventListener('click', () => {
+          navbarLinks.classList.toggle('active');
+        });
+      </script>
+    
+  </header>
 
 <main>
 <!--the main part-->
@@ -228,5 +245,6 @@
     ©2023 - Katerine Gomez Bautista
 
 </footer>
+<script src="/script.js"></script>
 </body>
 </html>
