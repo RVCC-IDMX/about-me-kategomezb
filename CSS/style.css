@@ -1,14 +1,17 @@
 body {
-    font-family:Roboto;
-    background-color: #FFE4C2;
-    color:#002835;
-    font-weight: bolder;
+  font-family: 'Baskervville', serif;
+  background-color: #362B48;
+  color:#FCF7FF;
+  font-weight: bolder;
+  
     
     
 }
 
+
+
 h1, h2, h3, h4, h5, h6 {
-   font-family:"Special Elite";
+  font-family: 'Baskervville', serif;
    
    
 }
@@ -35,53 +38,370 @@ header {
 }
 
 #hero, footer {
-    background-color:#FEC87F;
-    text-align:center;
-    padding: 10px;
-    border:5px solid #5C4E47;
-    
-    
+  text-align:center;
+  padding: 10px;
+  
+  margin-bottom: 30px;   
 }
 /*Hero Section*/
-#hero img {
-    width: 300px;
 
+#hero {
+  padding: 7px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  color: #FFF;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  
 }
+
+#hero img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#hero div {
+  text-align: center;
+  color: #FDF7FF;
+}
+
+#hero div p:first-of-type {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: slide-down 1s ease-out;
+}
+
+#hero div p:last-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+  animation: slide-up 1s ease-out;
+}
+
+
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes border-colors {
+  0% {
+    border-image: linear-gradient(to right, #ff00ff, #00ffff) 1;
+  }
+  25% {
+    border-image: linear-gradient(to right, #00ffff, #ffff00) 1;
+  }
+  50% {
+    border-image: linear-gradient(to right, #ffff00, #ff00ff) 1;
+  }
+  75% {
+    border-image: linear-gradient(to right, #ff00ff, #00ff00) 1;
+  }
+  100% {
+    border-image: linear-gradient(to right, #00ff00, #00ffff) 1;
+  }
+}
+
+
 /*Bio Section*/
-#bio {
-    text-align: center;
-    
-    
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.bio .content h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 7px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin: 10px;
+  font-family: 'Baskervville', serif;
+}
+
+.title {
+  font-size: 1em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #362B48;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, #B2CAD5 30%, #3B9CB9 60%, #2E6577 88%, #FEF6FF 40%);
+  color: whitesmoke;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, #FEF6FF 30%, #B2CAD5 60%, #3B9CB9 88%, #2E6577 40%);
+  color: #2E6577;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .bio {
+      padding: 10px;
+  }
+
+  .bio img {
+      margin: 0 0 20px 0;
+      max-width: 100%;
+  }
+  .bio .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bio.text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 /*Hobbies Section*/
-element.style {
+#hobbies {
+    background-color: #9B89B3;
+    padding: 20px;
+    border: 1px solid #7B7484;
+    margin-top: 30px;
+    font-family: 'Baskervville', serif;
+  }
+  
+  #hobbies h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  #hobbies ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  #hobbies li {
+    margin-bottom: 5px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto; /* center container on page */
+  }
+  
+  .skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
-}
-#hobbies ul li:nth-child(even){
-    background: white;
-    color: black;
-    
-
-}
-
-ul li:nth-child(odd){
-    color: blue;
-    
-}
+    align-items: center;
+  }
+  
+  .skill-title {
+    text-align: center;
+  }
+  
+  .imagenes {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+  }
+  
+  .imagenes:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+  }
+  
+  .skill-icon {
+    width: 50px;
+    z-index: 2;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1rem 20px;
+    }
+  
+    .skill-box {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      grid-template-columns: 1fr;
+      padding: 1rem 10px;
+    }
+  
+    .skill-box {
+      font-size: 0.8rem;
+    }
+  }
+  
 /*Gallery Section*/
 #gallery {
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
-#gallery img{
-    max-width: 100%;
-}
-#gallery img{
-    text-align: center;
 
-
+#gallery h2 {
+  text-align: center;
 }
+
+.card {
+  width: 190px;
+  height: 380px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 70%;
+  border-radius: 6px 6px 0 0;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-image {
+  transform: scale(0.98);
+}
+
+.category,
+.heading {
+  font-weight: 600;
+  color: black;
+  padding: 7px;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: rgb(63, 121, 230);
+}
+
+.category:hover,
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: black;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
 /*Literature*/
 #lit div{
     
@@ -94,7 +414,7 @@ ul li:nth-child(odd){
     background-image: radial-gradient(white,rgb(240, 213, 155));
     margin-right:0.4em;
     line-height: .65;
-    border:4px outset burlywood;
+    border:4px outset #9B89B3;
     text-shadow: 2px 2px 3px black;
     box-shadow: 5px 5px 5px black;
     border-top-left-radius: .2em;
@@ -151,7 +471,7 @@ figure {
 #formElements {
     display: grid;
     row-gap: .5em;
-    color: black;
+    color: #FCF7FF;
   }
   #contact {
     padding: 1rem;
@@ -161,15 +481,15 @@ figure {
   }
   
   fieldset {
-    border: 2px solid black;
+    border: 2px solid #FCF7FF;
     margin-top: 1em;
     margin-bottom: 1em;
     
   }
  
   legend {
-    background-color: #FEC87F;
-    color: #002835;
+    background-color: #9B89B3;
+    color: #FCF7FF;
     padding:.5em;
   }
   #contact input, #contact textarea, #contact select, #contact button {
@@ -186,9 +506,9 @@ figure {
     margin:1rem;
   }
   #contact button{
-    background-color: #FEC87F;
-    color: #002835;
-    border: 1px solid #FEC87F;
+    background-color: #9B89B3;
+    color: #FCF7FF;
+    border: 1px solid #9B89B3;
     max-width:400px;
     width:50%;
     justify-self: center;
