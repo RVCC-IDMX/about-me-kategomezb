@@ -12,12 +12,12 @@ body {
 
 /* add some padding back to rest of page */
 main {
-  padding: 2vw;
+  padding: 0.5vw;
 }
 
 /* navbar */
 .navbar {
-  background-color: rgb(51, 48, 48);
+  background-color: #9B89B3;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ main {
 /* style all a tags in header and then on hover */
 .navbar-links a {
   color: whitesmoke;
-  background-color: rgb(51, 48, 48);
+  background-color: #9B89B3;
   font-size: 1.1rem;
   padding: 1rem 1.25rem;
   letter-spacing: 5px;
@@ -65,9 +65,9 @@ main {
 
 .navbar-links a:hover,
 .navbar-links a:focus {
-  color: #B6C4D6;
-  background-color: #315B8F;
-  filter: invert(1);
+  color: whitesmoke;
+  background-color: #362B48;
+  
   border-radius: 10px;
 }
 
@@ -143,6 +143,7 @@ main {
     margin: 0.5rem 0;
   }
 }
+
 
 
 

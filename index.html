@@ -8,7 +8,12 @@
     
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Neucha&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Baskervville&family=Neucha&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,400;1,300&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
     <link href="CSS/nav.css" rel="stylesheet">
     
@@ -21,8 +26,8 @@
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="img/logo-96X96.svg" alt="Blue origami logo">
-            <h1>Web Dev I - Online</h1>
+            <img src="img/font-ct.svg" alt="Blue origami logo">
+            <h1>About Me Project</h1>
         </div> 
         <div class="navbar-links">
             <ul>
@@ -54,78 +59,173 @@
 <main>
 <!--the main part-->
 
-<section id="hero">
-    <img src="img/avataaars.png"
-    alt="Avatar picture of me">
-
+<section id="hero" style="background-image: url('img/airplane.jpg');">
+    <img src="img/avataaars.png" alt="Avatar picture of me">
     <div>
-        <p>Katerine Gomez</p>
-        <p>Basking Ridge, NJ</p>
+      <p>Katerine Gomez</p>
+      <p>Basking Ridge, NJ</p>
     </div>
-    <!--close hero section-->
-</section>
+  </section>
 
-<section id="bio">
-    <!--bio section-->
+<!--bio-->
 
-    <h2>Biography:</h2>
-    <div>
-        <p>For this 2023...</p>
+<div class="bio">
+    <h2>Biography</h2>
+    <div class="content">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">FOR THIS 2023</p>
+            <p>Hover Me</p>
+          </div>
+          <div class="flip-card-back">
             <p>I want to work out more</p>
             <p>I want to improve my math skills</p>
-            <p>I want to work out more</p>
-        <p>My top 3 of videogames are...</p>
-            <p>The Last of Us
+          </div>
+        </div>
+      </div>
+  
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">MY TOP 3 VIDEOGAMES</p>
+            <p>Hover Me</p>
+          </div>
+          <div class="flip-card-back">
+            <p>The Last of Us</p>
             <p>Fifa</p>
             <p>Call of Duty</p>
-        <p>Something I wish I could do is...</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">SOMETHING I WISH I COULD DO IS</p>
+            <p>Hover Me</p>
+          </div>
+          <div class="flip-card-back">
+            <p>I want to work out more</p>
             <p>I wish I could travel to my home country so I can see my family again</p>
             <p>I wish I could help more homeless animals</p>
-        <p>My favorite things to do in my free time are...</p>
-            <p>My favorite thing to do is play videogames</p>
-            <p>My other favorite thing to do is chill with the dogs</p>
-        </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <p class="title">MY FAVORITE THINGS TO DO ARE</p>
+            <p>Hover Me</p>
+          </div>
+          <div class="flip-card-back">
+            <p>Play video games</p>
+            <p>Chill with the dogs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Hobbies-->
+  <section id="hobbies">
+
+    <h2>My Hobbies</h2>
+
+    <div class="container">
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="imagenes">
+                    <img src="img/camera.png" class="skill-icon">
+                </div>
+                <h5>Taking Pictures</h5>
+            </div>
+            <p>I like photography because it has made me fall in love with light and see the world around me with fresh eyes every day. Taking photos is something I can do anytime, anywhere and all I need is my phone.</p>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="imagenes">
+                    <img src="img/joystick.png" class="skill-icon">
+                </div>
+                <h5>Gaming</h5>
+            </div>
+            <p>Every time I adventure into open worlds to make decisions constantly and every time I incarnate with characters that are not real, I consider that we are exploring our personality and knowing a part of ourselves as people of integrity.</p>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="imagenes">
+                    <img src="img/dog.png" class="skill-icon">
+                </div>
+                <h5>Playing With the Dogs</h5>
+            </div>
+            <p>It never hurts to move the body a few extra minutes, I am usually busy all day and these minutes of activity with my dogs help me get moving and help my heart to be a little healthier.</p>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="imagenes">
+                    <img src="img/skiing.png" class="skill-icon">
+                </div>
+                <h5>Skiing</h5>
+            </div>
+            <p>When I ski I can't afford to be thinking about what I did in the morning or what you're going to do next. You have to be very present and perceive what is around. </p>
+        </div>
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="imagenes">
+                    <img src="img/book.png" class="skill-icon">
+                </div>
+                <h5>Reading</h5>
+            </div>
+            <p>Reading helps me improve my comprehension, attention, observation, concentration and memory. It is a good method to disconnect from the outside.</p>
+        </div>
+        
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="imagenes">
+                    <img src="img/car.png" class="skill-icon">
+                </div>
+                <h5>Driving</h5>
+            </div>
+            <p>I like to drive because I enjoy traveling, I like to enjoy the landscapes and listen to music, make stops to rest, eat and talk.</p>
+        </div>
+        
     </div>
 </section>
-<section id="hobbies">
 
-    <h2>Hobbies:</h2>
+<!--Gallery-->
 
-    <ul>
-        <li>Taking Pictures</li>
-        <li>Gaming</li>
-        <li>Playing with the dogs</li>
-        <li>Skiing / Wakesurfing</li>
-        <li>Reading</li>
-        <li>Driving</li>
-    </ul>
-
-</section>
 <section id="gallery">
     <h2>Photo Gallery</h2>
-
-    <hr> 
-    
-
-
-    <figure>
-        <img src="img/sunset-640w.jpg" alt="The perfect ride.">
-        <figcaption>Nice music and the perfect timing for a nice pic.</figcaption>
+  
+    <figure class="card">
+        <div class="card-image"></div>
+      <img src="img/sunset-640w.jpg" alt="The perfect ride.">
+      <div class="category"> Sunset </div>
+      <div class="heading">Music and the perfect timing for a nice pic. </div>
+      <div class="author"> By <span class="name">Katerine</span> 1 year ago</div>
     </figure>
-    <hr>
-
-    <figure>
-        <img src="img/gaming-640w.jpg" alt="My gaming setup.">
-        <figcaption>That was my first time building my own pc.</figcaption>
+  
+    <figure class="card">
+        <div class="card-image"></div>
+      <img src="img/gaming-640w.jpg" alt="My gaming setup.">
+      <div class="category"> Gaming </div>
+      <div class="heading">My first time building my own pc. </div>
+      <div class="author"> By <span class="name">Katerine</span> 2 years ago</div>
     </figure>
-    <hr>
-    <figure>
-        <img src="img/peepers-640w.jpg" alt="The new member.">
-        <figcaption>A new rescue addition to the family.</figcaption>
+  
+    <figure class="card">
+        <div class="card-image"></div>
+      <img src="img/peepers-640w.jpg" alt="The new member.">
+      <div class="category"> Mr. Peepers </div>
+      <div class="heading">A new rescue addition to the family. </div>
+      <div class="author"> By <span class="name">Katerine</span> 4 months ago</div>
     </figure>
 
-
-</section>
+  
+  </section>
+  
+<!--Video-->
 <section id="video">
 
     <h3>My Video</h3>
