@@ -67,6 +67,7 @@
     </div>
   </section>
 
+
 <!--bio-->
 
 <div class="bio">
@@ -199,52 +200,56 @@
     <h2>Photo Gallery</h2>
   
     <figure class="card">
-        <div class="card-image"></div>
-      <img src="img/sunset-640w.jpg" alt="The perfect ride.">
+      <div class="card-image" style="background-image: url('img/sunset-320w.jpg')" ></div>
+      <img src="img/sunset-640w.jpg" alt="The perfect ride."
+           srcset="img/sunset-640w.jpg 640w"
+           sizes="(max-width: 600px) 150px,
+                  300px"
+           />
       <div class="category"> Sunset </div>
       <div class="heading">Music and the perfect timing for a nice pic. </div>
       <div class="author"> By <span class="name">Katerine</span> 1 year ago</div>
     </figure>
   
     <figure class="card">
-        <div class="card-image"></div>
-      <img src="img/gaming-640w.jpg" alt="My gaming setup.">
+      <div class="card-image" style="background-image: url('img/gaming-640w.jpg')" ></div>
+      <img src="img/gaming-640w.jpg" alt="My gaming setup."
+           srcset="img/gaming-640w.jpg 640w,"
+           sizes="(max-width: 600px) 150px,
+                  300px"
+           />
       <div class="category"> Gaming </div>
       <div class="heading">My first time building my own pc. </div>
       <div class="author"> By <span class="name">Katerine</span> 2 years ago</div>
     </figure>
   
     <figure class="card">
-        <div class="card-image"></div>
-      <img src="img/peepers-640w.jpg" alt="The new member.">
+      <div class="card-image" style="background-image: url('img/peepers-640w.jpg')" ></div>
+      <img src="img/peepers-640w.jpg" alt="The new member."
+           srcset="img/peepers-640w.jpg 640w"
+           sizes="(max-width: 600px) 150px,
+                  300px"
+           />
       <div class="category"> Mr. Peepers </div>
       <div class="heading">A new rescue addition to the family. </div>
       <div class="author"> By <span class="name">Katerine</span> 4 months ago</div>
     </figure>
 
-  
-  </section>
-  
+
+</section>
+
 <!--Video-->
 <section id="video">
 
     <h3>My Video</h3>
     <p>We are so used to the pace of life we lead, doing our routines, doing all kinds of activities, believing that everything is going well and everything is under control, but what we do not know is that we are on autopilot without realizing that. STOP, is the key, stop doing what I am doing and try to be more aware about how I feel and what is going through my mind at that moment and decide to continue or change. By making a stop we understand the basis of things and how to handle them and only when we understand what the origin is, is when we can begin to transform them and make them useful to us. And the question is: Do we feel good being where we are? That's what we really want for our life? Do we want to stay there or do we look for a change? What are we doing then to change that?</p>
     <p>The problem or the cause is then in what I tell myself and not in what others tell me, then we have to do a job of going inside and being honest with ourselves, only then will we be able to make real changes. Maybe we do not like to analyze ourselves because we do not want or cannot see who we really are, but we must recognize that in my personality there are things where I need help from another to find that part of the tool I need for myself.</p>
-
-    <div id="myVideoWrapper">
-
-    <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/3KMc6ul620Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-</section>
-<style>
-    #myVideo {
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-
-</style>
+    <div class="video-wrapper">
+      <iframe class="video" src="https://www.youtube.com/embed/3KMc6ul620Y" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+  
+  <!--Literature-->
 <article id="lit">
 
     <h2>Pride and Prejudice</h2>
@@ -267,8 +272,8 @@
 
 <p>The same anxiety to get them by themselves was visible again in the evening. After tea, Mr. Bennet retired to the library, as was his custom, and Mary went up stairs to her instrument. Two obstacles of the five being thus removed, Mrs. Bennet sat looking and winking at Elizabeth and Catherine for a considerable time, without making any impression on them. Elizabeth would not observe her; and when at last Kitty did, she very innocently said, “What is the matter mamma? What do you keep winking at me for? What am I to do?”</p>
 
-        
-    </div>
+
+        </div>
 </article>
 
 <section id="contact">
@@ -323,20 +328,15 @@
             </fieldset>
             <!--Submit-->
             <button type="submit">Send</button>
-
-
+        
+            
         </div>
 
 
 
-        </fieldset>
-
-
-
-    </form>
-
-
-  </section>
+    </fieldset>
+</form>
+</section>
 
 </main>
 
@@ -345,6 +345,6 @@
     ©2023 - Katerine Gomez Bautista
 
 </footer>
-<script src="/script.js"></script>
+
 </body>
 </html>
