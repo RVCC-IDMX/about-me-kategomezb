@@ -1,15 +1,3 @@
-/* make scrolling smooth */
-html {
-  scroll-behavior: smooth;
-}
-
-/* get rid of padding & sizing on body so header is at top */
-body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 /* add some padding back to rest of page */
 main {
   padding: 0.5vw;
@@ -109,7 +97,7 @@ main {
     justify-content: space-between;
     font-size: 1rem;
     
-/* adjusted to a reasonable value */
+    /* adjusted to a reasonable value */
     text-align: center;
   }
 
@@ -117,6 +105,7 @@ main {
   .hamburger {
     display: none;
   }
+
 }
 
 /* move hamburger to the right */
