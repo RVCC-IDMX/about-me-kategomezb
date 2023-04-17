@@ -80,7 +80,7 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-/* media query for non-mobile nav bar min-width set to width of nav elements such that no text wraps */
+
 @media screen and (min-width: 60rem) {
   .navbar-links {
     display: flex;
@@ -97,18 +97,16 @@ main {
     justify-content: space-between;
     font-size: 1rem;
     
-    /* adjusted to a reasonable value */
+    
     text-align: center;
   }
 
-  /* hide hamburger on larger screens */
   .hamburger {
     display: none;
   }
 
 }
 
-/* move hamburger to the right */
 .navbar-toggle {
   order: 1;
   margin-left: auto;

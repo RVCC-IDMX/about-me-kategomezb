@@ -436,7 +436,6 @@ h2 {
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
-  /* 16:9 aspect ratio */
   height: 0;
 }
 
@@ -455,24 +454,82 @@ h2 {
   }
 }
 
+/*blog*/
 
-/*Literature*/
-#lit div{
-    
-    max-width: 40rem;
+.hover-effect {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
 }
-#lit div p:first-child:first-letter{
-    color:black;
-    float: left;
-    font-size:1.4em;
-    background-image: radial-gradient(white,rgb(240, 213, 155));
-    margin-right:0.4em;
-    line-height: .65;
-    border:4px outset #9B89B3;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 5px 5px 5px black;
-    border-top-left-radius: .2em;
-    border-bottom-right-radius: .2em;
+
+.one {
+  background-color: #00ff00;
+  border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  transition: .3 all ease;
+  display: block;
+}
+
+.one:hover{
+  flex-grow: 2;
+  background-color: rgb(44, 82, 209);
+  width: 140px;
+}
+
+/*explanation*/
+
+.section-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #9B89B3;
+}
+
+.explanation {
+  flex-grow: 1;
+  max-width: 30%;
+  margin-right: 20px;
+  text-align: justify;
+  padding-right: 40px;
+}
+
+.my-effect {
+  width: 20%;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .section-one {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .explanation {
+    max-width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .my-effect {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .explanation {
+    font-size: 14px;
+  }
 }
 
 /* tablet size */
@@ -492,12 +549,8 @@ figcaption {
 figure img {
     width: 100%;
 }
+}
 
-#lit div {
-    max-width: 100%;
-    columns: 30rem;
-}
-}
 /* large screen size */
 
 @media screen and (min-width: 60em) {
@@ -567,6 +620,8 @@ figure {
     width:50%;
     justify-self: center;
   }
+  
+  
   
 
 
