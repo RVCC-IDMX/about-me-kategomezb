@@ -200,36 +200,41 @@
     <h2>Photo Gallery</h2>
   
     <figure class="card">
-      <div class="card-image" style="background-image: url('img/sunset-320w.jpg')" ></div>
-      <img src="img/sunset-640w.jpg" alt="The perfect ride."
-           srcset="img/sunset-640w.jpg 640w"
-           sizes="(max-width: 600px) 150px,
-                  300px"
-           />
-      <div class="category"> Sunset </div>
-      <div class="heading">Music and the perfect timing for a nice pic. </div>
-      <div class="author"> By <span class="name">Katerine</span> 1 year ago</div>
+  <img src="img/city-640w.jpg" alt="The perfect time."
+       srcset="img/city-640w.jpg 640w"
+       sizes="(max-width: 600px) calc(100vw - 20px),
+              (max-width: 960px) calc(50vw - 20px),
+              (max-width: 1280px) calc(33.3vw - 20px),
+              calc(25vw - 20px)"
+       style="object-fit: cover; width: 100%; height: 100%;"
+  />
+  <div class="category">San Francisco</div>
+  <div class="heading">First time in this City.</div>
+  <div class="author">By <span class="name">Katerine</span> 3 years ago</div>
     </figure>
-  
+
     <figure class="card">
-      <div class="card-image" style="background-image: url('img/gaming-640w.jpg')" ></div>
-      <img src="img/gaming-640w.jpg" alt="My gaming setup."
-           srcset="img/gaming-640w.jpg 640w,"
-           sizes="(max-width: 600px) 150px,
-                  300px"
-           />
-      <div class="category"> Gaming </div>
-      <div class="heading">My first time building my own pc. </div>
-      <div class="author"> By <span class="name">Katerine</span> 2 years ago</div>
-    </figure>
-  
-    <figure class="card">
-      <div class="card-image" style="background-image: url('img/peepers-640w.jpg')" ></div>
-      <img src="img/peepers-640w.jpg" alt="The new member."
-           srcset="img/peepers-640w.jpg 640w"
-           sizes="(max-width: 600px) 150px,
-                  300px"
-           />
+  <img src="img/california-640w.jpg" alt="My gaming setup."
+       srcset="img/california-640w.jpg 640w"     
+       sizes="(max-width: 600px) calc(100vw - 20px),
+              (max-width: 960px) calc(50vw - 20px),
+              (max-width: 1280px) calc(33.3vw - 20px),
+              calc(25vw - 20px)"
+       style="object-fit: cover; width: 100%; height: 100%;"
+  />
+  <div class="category">Sunset</div>
+  <div class="heading">One of the best days of my life.</div>
+  <div class="author">By <span class="name">Katerine</span> 3 years ago</div>
+  </figure>
+  <figure class="card">
+    <img src="img/peepers-640w.jpg" alt="New dog"
+         srcset="img/peepers-640w.jpg 640w"     
+         sizes="(max-width: 600px) calc(100vw - 20px),
+                (max-width: 960px) calc(50vw - 20px),
+                (max-width: 1280px) calc(33.3vw - 20px),
+                calc(25vw - 20px)"
+         style="object-fit: cover; width: 100%; height: 100%;"
+    />
       <div class="category"> Mr. Peepers </div>
       <div class="heading">A new rescue addition to the family. </div>
       <div class="author"> By <span class="name">Katerine</span> 4 months ago</div>
@@ -266,6 +271,13 @@
   <div class="one"></div>
   <div class="one"></div>
   <div class="one"></div>
+</div>
+
+<div class="section-one">
+  <div class="explanation">
+    <p>In the HTML code you need to create a container element with the class name "hover-effect". Within this container, I added three empty div elements with the class name "one". However, you can add as many as want and name the class as you want as well.</p>
+  </div>
+  <img src="img/hover-html.png" class="my-effect">
 </div>
 
 <div class="section-one">
