@@ -259,13 +259,14 @@
     <h2>Css Animation</h2>
     <div>
         <p>At its core, a CSS animation refers to the gradual modification of an element's styling within the HTML. Specifically, the coder establishes both starting and ending styles in the CSS code that will be rendered by browsers as a discreet visual transition over time. By incorporating this technique into website design, developers can inject movement and vitality into pages while enhancing their overall user experience through captivating visual effects. Implementation of these features can be achieved with remarkable ease, requiring only a concise code set-up.</p>
-        <p>Today I am going to introduce you to how to create Loader and Cube Animation using only HTML and CSS.</p>
-
+        <p>CSS animations allow us to do many of the things that we previously had reserved only for the use of supplementary technologies, which only increased the difficulty of development, limited its compatibility between different types of users and platforms, as well as the knowledge requirements of the developer to be able to incorporate them.</p>
+        <p>Today I am going to introduce you to how to create Hover and a Bar Loader Animation using only HTML and CSS.</p>
 </article>
 
-<!--Loader-->
+<!--Hover-->
 
   <h3>Hover Effect</h3>
+  <p>This hover effect increases the size and changes the background color of an element when a user hovers over it with their mouse. This effect can be used to add interactivity and visual feedback to a website or application, and can help to get the user's attention to specific elements. The effect can be applied to various types of elements, such as buttons, images, or links, to enhance their visual appearance and improve the user experience.</p>
   
 <div class="hover-effect">
   <div class="one"></div>
@@ -286,6 +287,32 @@
   </div>
   <img src="img/hover-css.png" class="my-effect">
 </div>
+
+<!--Bar-->
+
+<h3>Bar Loader</h3>
+<p>The Loaders are a type of animation that is used to show the user the progress of loading content on a website. Today we are going to learn how to make the bar loader, but there are many other types that are very creative and will make your website look professional.</p>
+
+<section class="loader-two">
+  <div class="bar"></div>
+</section>
+
+<div class="section-two">
+  <div class="explanation">
+    <p>In the HTML code you need to create a section with the class name you want, but in my case, I am going to name it "loader-two". Inside the section, you are going to create a division element with the class name "bar".</p>
+  </div>
+  <img src="img/loader-html.png" class="my-effect">
+</div>
+
+<div class="section-two">
+  <div class="explanation">
+    <p>In the CSS code we need to add the "loader-two" so you can add the height, display, padding, and center the progress bar both vertically and horizontally. With the .bar you are going to add the width, height, background color, and if you want to, you could also use a rounded corners. The ::before element makes the moving effect, and you can select the color you want for the progress bar. Last thing we have to add is the keyframe, this allows the animation to move the bar from left to right and it repeats infinitely.</p>
+  </div>
+  <img src="img/loader-css.png" class="my-effect">
+  
+</div>
+
+
 
 <!--Conctact-->
 
@@ -341,8 +368,8 @@
             </fieldset>
             <!--Submit-->
             <button type="submit">Send</button>
-        
-            
+
+
         </div>
 
 

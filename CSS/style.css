@@ -2,13 +2,8 @@ body {
   font-family: 'Baskervville', serif;
   background-color: #362B48;
   color:#FCF7FF;
-  font-weight: bolder;
-  
-    
-    
+  font-weight: bolder; 
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Baskervville', serif;
@@ -28,11 +23,7 @@ h3{
 h4{
     font-size:25pt;
     text-align:center; 
-    
-
 }
-
-
 header {
     text-align:center;
 }
@@ -431,6 +422,8 @@ h2 {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+  text-align: justify;
+  
 }
 
 .video-wrapper {
@@ -455,6 +448,10 @@ h2 {
 }
 
 /*blog*/
+
+#blog p {
+  text-align: justify;
+}
 
 .hover-effect {
   width: 90%;
@@ -504,9 +501,6 @@ h2 {
   width: 20%;
   justify-content: center;
 }
-
-
-
 @media screen and (max-width: 768px) {
   .section-one {
     flex-direction: column;
@@ -571,6 +565,90 @@ hr {
 
 figure {
     display: block;}
+}
+
+/*loader*/
+
+.loader-two {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+
+.bar {
+  position: relative;
+  height: 50px;
+  width: 800px;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #c069da;
+  animation: animate-bar 2s ease-in-out infinite;
+}
+
+@keyframes animate-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*explanaiton 2*/
+
+.section-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #9B89B3;
+}
+
+.explanation {
+  flex-grow: 1;
+  max-width: 30%;
+  margin-right: 20px;
+  text-align: justify;
+  padding-right: 40px;
+}
+
+.my-effect {
+  width: 20%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .section-two {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .my-effect {
+    width: 100%;
+  }
+  
+  .explanation {
+    max-width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
 }
 
 /* Contact Form*/
