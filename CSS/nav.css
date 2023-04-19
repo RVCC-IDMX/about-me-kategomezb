@@ -40,7 +40,7 @@ main {
   padding: 0.5em 0;
 }
 
-/* style all a tags in header and then on hover */
+/* style all a tags */
 .navbar-links a {
   color: whitesmoke;
   background-color: #9B89B3;
@@ -59,7 +59,7 @@ main {
   border-radius: 10px;
 }
 
-/* hamburger icon */
+/* hamburger icon*/
 .hamburger {
   display: flex;
   flex-direction: column;
