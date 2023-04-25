@@ -99,9 +99,9 @@ I used CSS to style the properties for the section, such as the background color
 
 In this section I wanted to do something impressive but what I wanted to do required javascript, so I decided to go with an animation is very common that is the hover effect and the bar loader. It was very fun to do it because you can do it in the way you want, you can add that animations to photos and texts, so I found it very interesting to include those two animations on my website.
 
-For the title of "CSS Animation" I broke down the letters into indivual ones and each letter is wrapped in a <span> element. I decided to do this because I thought that I would be fun to intruduce the topic title with an animation. 
+For the title of "CSS Animation" I broke down the letters into indivual ones and each letter is wrapped in a 'span' element. I decided to do this because I thought that I would be fun to intruduce the topic title with an animation. 
 
-When the person hovers over each letter, it would move and it will stop when they are not clicking it. To explain this better, when my <h2> is hovered over, each <span> element that is inside it is animated with the 'animated-text' keyframes. I used a transform and opacity to make the text move and fade in and out. I also used an animation delay to create a cascading effect. The last thing I added was a iteration count that I set to infinite to help my animation so it can repeat infinitely. 
+When the person hovers over each letter, it would move and it will stop when they are not clicking it. To explain this better, when my h2 is hovered over, each 'span' element that is inside it is animated with the 'animated-text' keyframes. I used a transform and opacity to make the text move and fade in and out. I also used an animation delay to create a cascading effect. The last thing I added was a iteration count that I set to infinite to help my animation so it can repeat infinitely. 
 
 For this section I wanted to keep some information with the purple background and other information with the lighter color, so I decided to put the explanation of how to achieve the effect with the clear background color so I could maintain that visual constancy.
 
