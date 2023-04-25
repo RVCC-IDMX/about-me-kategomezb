@@ -3,7 +3,7 @@
 
 Hello everyone and welcome to my About Me Project. My name is Katerine Gomez and I will be sharing a little bit more about this project that I did on my Web Development I class at Raritan Valley Community College.
 
-First of all I will share with all of you my Netlify Status Badges: https://api.netlify.com/api/v1/badges/c44c454b-b4e0-47c2-8860-64c968bcc7e1/deploy-status
+First of all I will share with all of you my Netlify Status Badges: [![Netlify Status](https://api.netlify.com/api/v1/badges/c44c454b-b4e0-47c2-8860-64c968bcc7e1/deploy-status)](https://app.netlify.com/sites/about-me-kategomezb/deploys)
 
 # About Me Project Description - Skill Development
 
@@ -19,7 +19,7 @@ For my project I used a muted purple, a pale pinkish and the dark purple as a co
 
 The #9B89B3 and the #362B48 are complementary with each other. The #FDF7FF and the #362B48 are complementary as well, so it was really easy to choose those colors. Selecting this colors helped me to balance the color palette with a good mix of light and dark color that can make my website look a little sophisticated, and with a little muted atmosphere.
 
-<img src="img\palette.jpeg">
+<img src="img\9B89B3.jpeg">
 
 -Hex Codes:
 
