@@ -19,7 +19,7 @@ For my project I used a muted purple, a pale pinkish and the dark purple as a co
 
 The #9B89B3 and the #362B48 are complementary with each other. The #FDF7FF and the #362B48 are complementary as well, so it was really easy to choose those colors. Selecting this colors helped me to balance the color palette with a good mix of light and dark color that can make my website look a little sophisticated, and with a little muted atmosphere.
 
-<img src="img\9B89B3.jpeg">
+<img src="img\palette.jpeg">
 
 -Hex Codes:
 
