@@ -104,6 +104,9 @@ header {
   align-items: center;
   justify-content: center;
 }
+.bio .content {
+  margin-top: 10px;
+}
 
 .bio .content h2 {
   margin-top: 20px;
@@ -113,7 +116,7 @@ header {
 }
 
 h2 {
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 
 .flip-card {
